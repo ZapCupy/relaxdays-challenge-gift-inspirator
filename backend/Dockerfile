@@ -6,6 +6,6 @@ RUN pip install pipenv
 COPY Pipfile Pipfile.lock /app/
 RUN pipenv install --system --deploy
 
-# TODO Build project source and dependencies.
+COPY . /app/
 
-# TODO Specify end point.
+CMD pipenv run python server.py
