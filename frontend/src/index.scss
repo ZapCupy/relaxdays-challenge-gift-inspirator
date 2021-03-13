@@ -1,0 +1,25 @@
+$enable-rounded: true;
+$enable-shadows: true;
+$enable-gradients: false;
+$primary: #283582;
+
+@import "~bootstrap/scss/bootstrap";
+
+#root {
+  > .container {
+    padding-top: $spacer;
+    padding-bottom: max($navbar-brand-height, $nav-link-height) + 2 * $spacer;
+  }
+
+  > .app-nav {
+    box-shadow: $box-shadow;
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+  }
+
+  .app-footer {
+    border-top: $border-width solid $border-color;
+  }
+}
