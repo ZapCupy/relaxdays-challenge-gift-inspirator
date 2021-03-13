@@ -22,7 +22,43 @@ cd relaxdays-challenge-gift-inspirator/
    docker-compose up
    ```
 
-1. The app is now running on [`localhost:????`](http://localhost:????/)
+1. The frontend is now running on [`localhost:3000`](http://localhost:3000/) and the backend on [`localhost:3000`](http://localhost:3000/).
+
+### Local machine
+
+#### Backend
+
+1. Install [Python 3](https://python.org/downloads/), [pipx](https://pipxproject.github.io/pipx/installation/#install-pipx), and [Pipenv](https://pipenv.pypa.io/en/latest/install/#isolated-installation-of-pipenv-with-pipx)
+1. Install dependencies:
+
+    ```shell script
+    pipenv install
+    ```
+
+1. Run the notebook:
+
+    ```shell script
+    pipenv run python server.py
+    ```
+
+1. The backend is now running on [`localhost:5000`](http://localhost:5000/)
+
+#### Frontend
+
+1. Install [Node](https://yarnpkg.com/) and [Yarn](https://yarnpkg.com/).
+1. Install dependencies:
+
+   ```shell script
+   yarn install
+   ```
+
+1. Run the app:
+
+   ```shell script
+   yarn start
+   ```
+
+1. The frontend is now running on [`localhost:3000`](http://localhost:3000/)
 
 ## License
 
