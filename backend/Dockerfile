@@ -8,4 +8,4 @@ RUN pipenv install --system --deploy
 
 COPY . /app/
 
-CMD pipenv run python server.py
+CMD python server.py
