@@ -16,8 +16,7 @@ export const Home: FunctionComponent = () => {
   const [link, setLink] = useState<string | undefined>(undefined);
 
   useEffect(() => {
-    const link = await loadLink();
-    setLink(link);
+    loadLink();
   }, [loadLink, setLink]);
 
   return (
